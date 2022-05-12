@@ -1,4 +1,4 @@
-const WINDOW = {}
+let WINDOW = {}
 if (process.browser) {
     WINDOW = window
 } else {
@@ -6,7 +6,10 @@ if (process.browser) {
         doucument: {
             location: {}
         },
-        localStorage: {}
+        localStorage: {
+            getItem: () => {},
+            setItem: () => {}
+        }
     }
 }
 export default WINDOW

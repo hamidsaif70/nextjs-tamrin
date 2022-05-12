@@ -1,12 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Layout from "../component/Layout";
+import Reset from "../container/Reset";
 
 export default function Document() {
     return (
         <Html>
             <Head />
             <body>
-                this is from _document.js
+                <Reset/>
                 <Main />
                 <NextScript />
             </body>
